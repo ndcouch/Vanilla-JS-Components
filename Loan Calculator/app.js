@@ -11,7 +11,7 @@ document.getElementById("loan-form").addEventListener("submit", function(e) {
 });
 
 // CALCULATE RESULTS
-function calculateResults(e) {
+function calculateResults() {
   //UI Vars
   const amount = document.getElementById("amount");
   const interest = document.getElementById("interest");
@@ -41,8 +41,6 @@ function calculateResults(e) {
   } else {
     showError("Please check your numbers");
   }
-
-  e.preventDefault();
 }
 
 // SHOW ERROR
